@@ -1,0 +1,15 @@
+/* Only vertical margins collapse */
+
+.p1 {
+  margin-bottom: 20px;
+}
+
+.p2 {
+  margin-top: 40px;
+}
+
+.p3,
+.p4 {
+  display: inline-block;
+  margin: 0 10px;
+}

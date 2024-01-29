@@ -1,0 +1,31 @@
+.container {
+  margin: 0 auto;
+  width: 800px;
+}
+
+h2 {
+  margin: 3rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.selector {
+  margin: 10px 15px 20px 45px;
+  padding: 10px 15px 20px 45px;
+}
+
+.box {
+  box-sizing: border-box;
+  --box-size: 100px;
+  width: var(--box-size);
+  height: var(--box-size);
+  border: 5px solid deeppink;
+  /* padding: 0 20px 0 0; */
+  /* margin: 20px;
+  margin-bottom: 40px; */
+  /* padding-left: ;
+  padding-top: ; */
+  margin: 0 auto;
+}
