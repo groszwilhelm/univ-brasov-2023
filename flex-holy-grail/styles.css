@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+}
+
+html, 
+body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100%;
+}
+
+header {
+  background-color: green;
+  min-height: 100px;
+}
+
+nav {
+  background-color: yellow;
+  min-height: 100px;
+  flex: 1 0 100px;
+}
+
+main {
+  background-color: blue;
+  min-height: 100px;
+  flex-grow: 5;
+}
+
+aside {
+  background-color: deeppink;
+  min-height: 100px;
+  flex: 1 0 100px;
+}
+
+footer {
+  background-color: hotpink;
+  min-height: 100px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh; */
+  min-height: 100%;
+  flex: 1;
+}
+
+div {
+  display: flex;
+  flex-grow: 1;
+}
