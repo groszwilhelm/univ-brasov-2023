@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+header,
+footer {
+}
+
+header {
+  grid-area: header;
+  background-color: green;
+  min-height: 100px;
+}
+
+nav {
+  grid-area: 🎄;
+  background-color: yellow;
+  min-height: 100px;
+}
+
+main {
+  grid-area: main;
+  background-color: blue;
+  min-height: 100px;
+}
+
+aside {
+  grid-area: 🔥;
+  background-color: deeppink;
+  min-height: 100px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: hotpink;
+  min-height: 100px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 15rem auto 15rem;
+  grid-template-rows: 10rem auto 10rem;
+  grid-template-areas:
+    "header header header"
+    "🎄 main 🔥"
+    "footer footer footer";
+
+  min-height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  section {
+    grid-template-areas:
+      "header header"
+      "🎄 🔥"
+      "main main"
+      "footer footer";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: initial;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  section {
+    grid-template-areas:
+      "header"
+      "🎄"
+      "main"
+      "🔥"
+      "footer";
+    grid-template-columns: auto;
+    grid-template-rows: initial;
+  }
+}
+

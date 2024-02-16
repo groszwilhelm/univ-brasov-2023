@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+}
+
+html, 
+body {
+  height: 100%;
+}
+
+header, footer {
+  grid-column: 1 / -1;
+}
+
+header {
+  background-color: green;
+  min-height: 100px;
+}
+
+nav {
+  background-color: yellow;
+  min-height: 100px;
+}
+
+main {
+  background-color: blue;
+  min-height: 100px;
+}
+
+aside {
+  background-color: deeppink;
+  min-height: 100px;
+}
+
+footer {
+  background-color: hotpink;
+  min-height: 100px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 15rem auto 15rem;
+  grid-template-rows: 10rem auto 10rem;
+  min-height: 100%;
+}
